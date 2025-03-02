@@ -8,6 +8,8 @@ Official repository for the MapModEX map modification companion code for the WAC
 
 A proper full release with minimal running examples, installation instructions and cleaner code notations will be released as soon as possible!
 
+*A more complex MapModEX 2.0 library is in development. It will allow for more complex element-wise perturbations and create map files readable by a nuscenes-like api for applications like trajectory forecasting.*
+
 ## Quick start
 
 For the time being, libraries should be installed by following installation instructions of MapTRv2 [code](https://github.com/hustvl/MapTR/tree/maptrv2), precisely this [commit](https://github.com/hustvl/MapTR/tree/6aacba765e8d574df25f3e05be9cadce7dd8b58e) from August 31, 2023. Much like the main MapEX code, it is worth noting this code heavily builds upon the original MapTRv2 code.
@@ -100,7 +102,7 @@ trans_args = PerturbParameters(del_ped=[1, 0.5, None],
                                 int_sav=False,
                                 visual=True,         # switch for the visualization
                                 vis_show=False,      # switch for plot
-                                vis_path='/home/li/Documents/map/MapTRV2Local/tools/maptrv2/map_perturbation/visual/')   # path for saving the visualization)    # default is False
+                                vis_path='/path/to/vis/directory')   # path for saving the visualization)    # default is False
 ```
 
 You should give your annotation a name, such as "annotation_1". After running you will have a perturbation annotation in your info.
